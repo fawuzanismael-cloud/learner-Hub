@@ -1,0 +1,6 @@
+# The project lives at the repository root. This base setting overrides the
+# stale "Base directory" value in the site's UI build settings.
+[build]
+  base = "."
+  command = "echo 'Static site: no build step required'"
+  publish = "public"
