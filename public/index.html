@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub — Learning Management System</title>
+    <style>
+      :root {
+        --teal: #0d9488;
+        --dark: #0f172a;
+        --muted: #64748b;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        color: var(--dark);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+        padding: 2rem;
+      }
+      main {
+        max-width: 640px;
+        text-align: center;
+        background: #fff;
+        border-radius: 16px;
+        padding: 3rem 2.5rem;
+        box-shadow: 0 10px 40px rgb(2 6 23 / 0.08);
+      }
+      h1 { font-size: 2rem; margin-bottom: 0.75rem; }
+      h1 span { color: var(--teal); }
+      p { color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+      code {
+        display: inline-block;
+        background: #f1f5f9;
+        border-radius: 6px;
+        padding: 0.15rem 0.5rem;
+        font-size: 0.9em;
+      }
+      ul { text-align: left; margin: 1.5rem auto 0; max-width: 420px; color: var(--muted); line-height: 1.8; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Learn<span>Hub</span></h1>
+      <p>
+        A full-stack learning management system: Node.js/Express API, MongoDB,
+        JWT sessions, and server-side exam grading.
+      </p>
+      <p>
+        This Express application is designed to run as a long-running server
+        (e.g. on Render or Railway). This static page is deployed by Netlify
+        while the full app runs elsewhere.
+      </p>
+      <ul>
+        <li>Start the API locally with <code>npm start</code></li>
+        <li>Configure the environment with <code>.env.example</code> as a template</li>
+        <li>API health check available at <code>/api/health</code></li>
+      </ul>
+    </main>
+  </body>
+</html>
